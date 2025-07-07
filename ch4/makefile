@@ -1,11 +1,11 @@
 build:
-	make prep && docker-compose build
+	make prep && docker compose build
 	
 up:
-	make prep && docker-compose up -d
+	make prep && docker compose up -d
 
 down:
-	docker-compose down
+	docker compose down
 
 restart:
 	make down && make up
